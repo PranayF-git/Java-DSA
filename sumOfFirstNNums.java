@@ -1,17 +1,16 @@
 import java.util.Scanner;
 
 public class sumOfFirstNNums {
-    public static void sumofFNNum(int n) {
-        int sum = 0;
-        if (n < 1) {
-            return;
+    public static int sum(int n) {
+        if (n == 0) {
+            return 0;
         }
-        System.out.println(n, sum + n);
+        return n + sum(n - 1);
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Program is running..");
         int n = sc.nextInt();
-        sumofFNNum(n);
+        System.out.println(sum(n));
     }
 }
