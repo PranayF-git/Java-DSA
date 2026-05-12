@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class fibonacciRecursion {
     public static void printFib(int a, int b, int n) {
         if (n == 0) {
@@ -8,8 +10,12 @@ public class fibonacciRecursion {
         printFib(b, c, n-1);
 
     }
+
     public static void main(String[] args) {
-        int n = 7;
+        System.out.println("Program is running...");
+        System.out.println("Enter a number to generate the fibonacci series: ");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         int a = 0;
         int b = 1;
         System.out.print(a+" ");
