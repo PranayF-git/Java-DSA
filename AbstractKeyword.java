@@ -8,7 +8,7 @@ abstract class Car{
     }
 }
 
-class Supercar extends Car{
+class Supercar extends Car{  //Concrete class
     void drive() {
         System.out.println("Driving...");
     }
